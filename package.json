@@ -1,0 +1,28 @@
+{
+  "name": "cstt-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "verify": "node scripts/verify.mjs",
+    "format": "prettier --write index.html src scripts package.json vercel.json wrangler.jsonc README.md design/prompts.md"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "prettier": "^3.9.6",
+    "sharp": "^0.35.4",
+    "vite": "^8.2.2"
+  },
+  "dependencies": {
+    "@fontsource-variable/dm-sans": "^5.3.0",
+    "@fontsource-variable/manrope": "^5.3.0",
+    "lucide": "^1.43.0"
+  }
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cstt.lk/sitemap.xml
