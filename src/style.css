@@ -144,18 +144,19 @@ svg {
 }
 .brand-type {
   font-family: "Manrope Variable", sans-serif;
-  font-size: 34px;
-  font-weight: 850;
-  letter-spacing: -2px;
+  font-size: 29px;
+  font-weight: 750;
+  letter-spacing: -1.1px;
   line-height: 1;
   color: var(--blue);
 }
 .brand-type > span {
   display: block;
-  font-size: 7.5px;
-  letter-spacing: 1.2px;
-  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0;
+  font-weight: 600;
   margin-top: 7px;
+  white-space: nowrap;
 }
 .nav-wrap nav {
   display: flex;
@@ -941,10 +942,10 @@ footer {
   width: 67px;
 }
 .footer-main .brand-type {
-  font-size: 29px;
+  font-size: 26px;
 }
 .footer-main .brand-type > span {
-  font-size: 6px;
+  font-size: 10px;
 }
 .back-top {
   display: flex;
@@ -1058,10 +1059,10 @@ footer {
     width: 65px;
   }
   .brand-type {
-    font-size: 29px;
+    font-size: 25px;
   }
   .brand-type > span {
-    font-size: 6px;
+    font-size: 10px;
   }
   .nav-wrap nav {
     font-size: 12px;
@@ -1634,7 +1635,7 @@ footer {
     width: 55px;
   }
   .footer-main .brand-type {
-    font-size: 26px;
+    font-size: 24px;
   }
   .back-top {
     margin-left: 0;

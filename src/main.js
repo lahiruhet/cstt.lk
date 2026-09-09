@@ -121,7 +121,7 @@ document.querySelector("#enquiry-form").addEventListener("submit", (event) => {
   const details = new FormData(form);
   const subject = `Transport enquiry: ${details.get("service")}`;
   const body = [
-    "Hello CSTT team,",
+    "Hello CS Tours and Transport Service team,",
     "",
     `I’m interested in: ${details.get("service")}`,
     "",
@@ -137,6 +137,6 @@ document.querySelector("#enquiry-form").addEventListener("submit", (event) => {
   ].join("\r\n");
   window.location.href = `mailto:info@cstt.lk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   document.querySelector("#form-status").textContent =
-    "Your email draft is ready to open. Send it from your email app to complete the enquiry. If no app opens, email info@cstt.lk or call +94 11 280 3702. Your details remain here for reference.";
+    "Your email draft is ready to open. Send it from your email app to complete the enquiry. If no app opens, email info@cstt.lk or call +94 112 337 887. Your details remain here for reference.";
 });
 document.querySelector("#year").textContent = new Date().getFullYear();

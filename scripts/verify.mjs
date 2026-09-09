@@ -33,7 +33,7 @@ try {
   await page.evaluate(() => document.fonts.ready);
   assert.equal(
     await page.title(),
-    "CSTT — Long-term vehicle hire. Lasting partnerships.",
+    "CS Tours and Transport Service — Long-term vehicle hire. Lasting partnerships.",
   );
   assert.equal(await page.locator("h1").count(), 1);
   assert.equal(
@@ -98,7 +98,7 @@ try {
   await page.locator('input[name="email"]').fill("review@example.com");
   await page
     .locator("textarea")
-    .fill("Two vans for Nugegoda. Quote ref: #123 & dates to discuss.");
+    .fill("Two vans for Colombo. Quote ref: #123 & dates to discuss.");
   assert.equal(
     await page.locator("form").evaluate((form) => form.checkValidity()),
     true,
@@ -168,7 +168,7 @@ try {
     "Core content works without JavaScript",
   );
   assert.equal(
-    await noJs.locator('a[href="tel:+94112803702"]').first().isVisible(),
+    await noJs.locator('a[href="tel:+94112337887"]').first().isVisible(),
     true,
   );
   assert.deepEqual(errors, [], "No broken assets or JavaScript errors");

@@ -1,6 +1,6 @@
-# CSTT landing page
+# CS Tours and Transport Service landing page
 
-A responsive, single-page website for **C S Tours and Transport Service**, focused on long-term vehicle hire, driver coordination and project/tender supply in Sri Lanka.
+A responsive, single-page website for **CS Tours and Transport Service**, focused on long-term vehicle hire, driver coordination and project/tender supply in Sri Lanka.
 
 ## Run locally
 
@@ -42,7 +42,7 @@ References: [Vite deployment guide](https://vite.dev/guide/static-deploy), [Clou
 - Main content, contact details and structured metadata: `index.html`.
 - Brand colours, typography and responsive layouts: `src/style.css`.
 - Navigation, fleet selection and enquiry email helper: `src/main.js`.
-- Contact details were carried over from [the existing contact page](https://cstt.lk/contacts.html): **+94 11 280 3702**, **info@cstt.lk**, **No. 582, Gangodawila, Nugegoda, Sri Lanka**. Confirm them before launch; changes should also update the JSON-LD and email helper.
+- Contact details supplied by the owner: **+94 112 337 887**, **info@cstt.lk**, **Level 5, East Tower, World Trade Center, Colombo 1**. Changes should also update the JSON-LD and email helper.
 - Dialog, SLT and Mobitel are named as clients based on the owner's brief. Their names are text, not supplied official brand artwork. RDA and NWSDB are not presented as existing clients.
 - The enquiry form opens a prefilled email draft. It does **not** send or store enquiries. The visitor must send the draft in their email application. Phone and direct email links are also provided. If you later want automatic delivery, add a server-side endpoint or form provider.
 - Fleet imagery is AI-generated and labelled illustrative; no specific vehicle model or availability is promised.
@@ -59,7 +59,7 @@ Generated with the built-in **imagegen** tool. Original generated source files a
 | Favicon                     | `public/images/favicon.png`                                      |
 | Social sharing card         | `public/og.png`                                                  |
 
-Exact generation prompts are recorded in `design/prompts.md`. To regenerate optimized website exports from the saved source images:
+Original generation prompts are recorded in `design/prompts.md`; the full-company-name update to the sharing card is recorded in `design/brand-update-prompt.md`. To regenerate optimized website exports from the saved source images:
 
 ```sh
 node scripts/prepare-assets.mjs
