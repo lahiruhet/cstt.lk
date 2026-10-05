@@ -413,33 +413,21 @@ h1 > span {
   justify-content: space-around;
   gap: 75px;
   flex: 1;
-  color: #596779;
+  --logo-scale: 1;
+}
+/* Heights are optical: the wide Dialog lockup reads larger than the narrow SLT mark. */
+.client-names > img {
+  width: auto;
+  height: calc(var(--logo-h) * var(--logo-scale));
 }
 .client-dialog {
-  font-size: 32px;
-  font-weight: 800;
-  letter-spacing: -1.4px;
-}
-.client-dot {
-  color: #96a1af;
+  --logo-h: 50px;
 }
 .client-slt {
-  font-size: 33px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  line-height: 0.95;
-}
-.client-slt > span {
-  display: block;
-  font-size: 6px;
-  letter-spacing: 1.4px;
-  margin-top: 6px;
+  --logo-h: 66px;
 }
 .client-mobitel {
-  font-size: 31px;
-  font-weight: 700;
-  font-style: italic;
-  letter-spacing: -1px;
+  --logo-h: 60px;
 }
 .section {
   padding: 94px 0;
@@ -1135,11 +1123,7 @@ footer {
   }
   .client-names {
     gap: 35px;
-  }
-  .client-dialog,
-  .client-mobitel,
-  .client-slt {
-    font-size: 27px;
+    --logo-scale: 0.85;
   }
   .section {
     padding: 70px 0;
@@ -1411,14 +1395,6 @@ footer {
     gap: 20px;
     justify-content: space-around;
   }
-  .client-dialog,
-  .client-slt,
-  .client-mobitel {
-    font-size: 27px;
-  }
-  .client-slt > span {
-    font-size: 5px;
-  }
   .section {
     padding: 58px 0;
   }
@@ -1689,11 +1665,7 @@ footer {
   }
   .client-names {
     gap: 15px;
-  }
-  .client-dialog,
-  .client-slt,
-  .client-mobitel {
-    font-size: 24px;
+    --logo-scale: 0.72;
   }
   .enquiry-form h3 {
     font-size: 17px;
